@@ -42,8 +42,8 @@ public class Parabola {
         double y1 = p.yVarf();
         double y2 = yVarfCurent();
 
-        double xParabola = (x1 + x2) / 2;
-        double yParabola = (y1 + y2) / 2;
+        //double xParabola = (x1 + x2) / 2;
+        //double yParabola = (y1 + y2) / 2;
 
         return Math.hypot(x2 - x1, y2 - y1);
     }
@@ -55,8 +55,8 @@ public class Parabola {
         double y2 = p2.yVarf();
 
         //coordonatele varfului parabolei
-        double xParabola = (x1 + x2) / 2;
-        double yParabola = (y1 + y2) / 2;
+        //double xParabola = (x1 + x2) / 2;
+        //double yParabola = (y1 + y2) / 2;
 
         return Math.hypot(x2 - x1, y2 - y1);
     }
