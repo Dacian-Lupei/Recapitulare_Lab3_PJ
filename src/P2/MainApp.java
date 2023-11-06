@@ -4,10 +4,9 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 public class MainApp {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args){
         try {
             List<Produs> produse = new ArrayList<>();
             Scanner scanner = new Scanner(System.in);
@@ -43,14 +42,14 @@ public class MainApp {
                 switch (opt) {
                     case 1:
                         for(Produs p: produse){
-                            System.out.println(p.toString());
+                            System.out.println(p);
                         }
                         break;
                     case 2:
                         LocalDate currentDate = LocalDate.now();
                         for(Produs p: produse){
                             if(p.getData_expirarii().isBefore(currentDate)){
-                                System.out.println(p.toString());
+                                System.out.println(p);
                             }
                         }
                         break;
@@ -84,7 +83,7 @@ public class MainApp {
                         }
                         for(Produs p: produse){
                             if(p.getPret() == Pret_Minim)
-                                System.out.println(p.toString());
+                                System.out.println(p);
                         }
                         break;
                     case 5:
@@ -110,7 +109,7 @@ public class MainApp {
                 }
             } while (true);
         }catch(IOException e){
-            e.printStackTrace();
+            System.err.println("Fisier gol " + e.getMessage());
         }
     }
 }
