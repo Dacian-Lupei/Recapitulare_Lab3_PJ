@@ -1,0 +1,2 @@
+Nume: zahar, pret: 1.5, cantitate: 50, Data expirarii: 2024-02-25
+Nume: cox, pret: 1.1, cantitate: 2, Data expirarii: 2019-01-01
